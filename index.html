@@ -8,37 +8,68 @@
 </head>
 <body class="bg-light text-dark">
 
-  <header class="bg-primary text-white text-center py-4">
-    <h1>Arquitectura Basada en Componentes</h1>
+  <header class="bg-primary text-white py-4">
+    <div class="container text-center">
+      <h1>Arquitectura Basada en Componentes</h1>
+      <p class="lead">Un enfoque modular y escalable para el desarrollo de software</p>
+    </div>
   </header>
 
   <main class="container my-5">
-    <section class="mb-4">
-      <h2>¿Qué es?</h2>
+    <!-- ¿Qué es? -->
+    <section class="mb-5">
+      <h2>¿Qué es la arquitectura basada en componentes?</h2>
       <p>
-        La arquitectura basada en componentes es un enfoque de diseño de software en el que el sistema se construye como un conjunto de partes independientes y reutilizables llamadas componentes. Cada componente encapsula una funcionalidad específica y se comunica con otros mediante interfaces bien definidas.
+        La arquitectura basada en componentes es un estilo de diseño de software donde las aplicaciones se construyen como un conjunto de módulos o "componentes" independientes. Cada componente representa una unidad funcional autocontenida, con sus propias responsabilidades, y puede ser desarrollado, probado y desplegado de forma individual.
+      </p>
+      <p>
+        Esta arquitectura promueve la reutilización, la mantenibilidad y la escalabilidad, al permitir que los desarrolladores trabajen en partes aisladas del sistema sin afectar al resto. Es ampliamente utilizada en frameworks modernos como Angular, React y Vue.js.
       </p>
     </section>
 
-    <section class="mb-4">
-      <h2>Ventajas</h2>
+    <!-- ¿Cómo funciona? -->
+    <section class="mb-5">
+      <h2>¿Cómo funciona?</h2>
+      <p>
+        Cada componente tiene una interfaz definida a través de la cual se comunica con otros componentes. Internamente, encapsula su lógica, datos y presentación. Esto permite que el componente sea reemplazado, actualizado o reutilizado sin afectar el resto del sistema.
+      </p>
+      <p>
+        Por ejemplo, en una aplicación web, podrías tener componentes como "Barra de navegación", "Formulario de contacto" o "Lista de productos". Estos componentes pueden incluir otros componentes dentro de sí, formando una jerarquía clara y ordenada.
+      </p>
+      <p>
+        El flujo de datos entre componentes puede ser unidireccional o bidireccional, dependiendo del framework y de las necesidades de la aplicación.
+      </p>
+    </section>
+
+    <!-- Beneficios -->
+    <section class="mb-5">
+      <h2>Beneficios de usar arquitectura basada en componentes</h2>
       <ul class="list-group list-group-flush">
-        <li class="list-group-item">Alta reutilización de código.</li>
-        <li class="list-group-item">Fácil mantenimiento y escalabilidad.</li>
-        <li class="list-group-item">Separación clara de responsabilidades.</li>
+        <li class="list-group-item"><strong>Reutilización:</strong> Los componentes pueden usarse en diferentes partes del sistema o incluso en otros proyectos.</li>
+        <li class="list-group-item"><strong>Mantenibilidad:</strong> Al estar desacoplados, los errores se pueden localizar y corregir más fácilmente.</li>
+        <li class="list-group-item"><strong>Escalabilidad:</strong> Facilita el trabajo en equipos grandes y el crecimiento progresivo del sistema.</li>
+        <li class="list-group-item"><strong>Pruebas:</strong> Los componentes pueden ser testeados de forma aislada.</li>
+        <li class="list-group-item"><strong>Mejor organización:</strong> Permite una estructura más limpia y comprensible del código.</li>
       </ul>
     </section>
 
-    <section class="mb-4">
-      <h2>Ejemplos comunes</h2>
+    <!-- Consideraciones -->
+    <section class="mb-5">
+      <h2>Consideraciones al usar esta arquitectura</h2>
       <p>
-        Este tipo de arquitectura es común en frameworks modernos como React, Angular o Vue, donde cada parte de la interfaz (botones, formularios, listas) es un componente reutilizable.
+        Aunque tiene muchas ventajas, es importante tener en cuenta algunos aspectos al aplicar la arquitectura basada en componentes:
       </p>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><strong>Planificación:</strong> Requiere una buena organización desde el inicio para evitar componentes redundantes o mal definidos.</li>
+        <li class="list-group-item"><strong>Comunicación entre componentes:</strong> Debe gestionarse de forma clara para no generar dependencias innecesarias.</li>
+        <li class="list-group-item"><strong>Gestión de estado:</strong> En sistemas grandes, se necesita una estrategia clara para manejar el estado compartido.</li>
+        <li class="list-group-item"><strong>Curva de aprendizaje:</strong> Algunos frameworks y conceptos pueden ser complejos al principio.</li>
+      </ul>
     </section>
   </main>
 
-  <footer class="text-center text-muted py-3">
-    Página creada con fines educativos. Abril 2025.
+  <footer class="bg-dark text-white text-center py-4">
+    <p class="mb-0">Página creada para explicar la arquitectura basada en componentes. Abril 2025.</p>
   </footer>
 
 </body>
